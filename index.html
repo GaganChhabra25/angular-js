@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app='gaganModel'>
+    <head>
+        <title></title>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="https://code.angularjs.org/1.5.0-rc.0/angular.min.js"></script>
+            <script src="https://code.angularjs.org/1.5.0-rc.0/angular-resource.min.js"></script>
+            <script src="https://code.angularjs.org/1.5.0-rc.0/angular-route.min.js"></script>
+        
+            <script src="aashish.js"></script>
+            <script src="gagan.js"></script>
+    </head>
+    <body> 
+            <div ng-controller="firstController">
+                <div>
+                    <label>What is your facebook ID ?</label>
+                    <input type="text" ng-model="input">
+                        <div ng-if="result">
+                          <h3>Text will be hidden in 3 seconds.</h3>
+                        </div>
+                    <hr/>
+                    <h1> facebook/{{input}}</h1>
+                </div>
+            </div>
+        
+        <div ng-controller="secondController">
+                <div>
+                    <label>What is your facebook ID ?</label>
+                    <input type="text" ng-model="input">
+                    <hr/>
+                    <h1> facebook/{{input}}</h1>
+                </div>
+        </div>
+        
+         <div ng-controller="thirdController">
+                <div ng-repeat="friend in friends">
+                   {{friend}}
+                </div>
+        </div>
+        
+        
+         <div ng-controller="fourthController">
+              
+        </div>
+        
+</body>
+</html>
